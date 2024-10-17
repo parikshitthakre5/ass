@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background-color: #99b3ff;
+        }
+        #cont{
+            width: 900px;
+            height: auto;
+            background-color: #b3c6ff;
+            display: block;
+            margin: 0px auto;
+            border-radius: 20px;
+            
+        }
+        #head{
+            text-align: center;
+            padding-top: 10px;
+        }
+        #mansoon{
+            display: block;
+            margin: 0px auto;
+            padding-bottom: 70px;
+            width: 70%;
+
+        }
+        #cont2{
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 70px;
+        }
+        .btn{
+            width: 140px;
+            font-size: large;
+            padding: 2px 8px;
+            border: none;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="cont">
+        <h1 id="head">Seasons</h1>
+        <img src="mans.jpg" alt="mansoonimg" id="mansoon"/>
+        <!-- <img src="Summer.avif" alt="Summer" id="Summer"/>
+        <img src="Winter.jpg" alt="Winter" id="Winter"/> -->
+
+        <div id="cont2">
+            <button type="button" class="btn" id="man" onclick="man()">Click Mansoon</button>
+            <button type="button" class="btn" id="sum" onclick="sum()">Click Summer</button>
+            <button type="button" class="btn" id="win" onclick="win()">Click Winter</button>
+        </div>
+    </div>
+    <script>
+        function man()
+        {
+            const img= document.getElementById("mansoon");
+            img.src="mans.jpg";
+
+        }
+        function sum()
+        {
+            const img= document.getElementById("mansoon");
+            img.src="Summer.avif";
+            
+        }
+        function win()
+        {
+            const img= document.getElementById("mansoon");
+            img.src="Winter.jpg";
+            
+        }
+
+    </script>
+
+</body>
+</html>
